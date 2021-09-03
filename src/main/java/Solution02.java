@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 
 
-public class solution02 {
+public class Solution02 {
     /*
     Create an application that prompts a string input
     it will then return "<string> has x characters."
