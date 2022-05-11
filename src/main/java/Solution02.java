@@ -10,20 +10,21 @@ public class Solution02 {
     Create an application that prompts a string input
     it will then return "<string> has x characters."
      */
-    //challenge 1: If nothing is entered, prompt for input
-    // until a valid string is input
-
     public static void main(String[] args){
+        //  Use scanner for input
         Scanner input = new Scanner(System.in);
+        
+        //  prompt user to input a string
         System.out.printf("What is the input string? ");
         String str = input.nextLine();
-
-        //challenge 1: if nothing is entered ask for
+        
+        //  Error handling method: while the input string is empty ask the user for input
         while (str == ""){
-            System.out.println("Please enter something, hun: ");
+            System.out.println("Please enter something ");
             str = input.nextLine();
         }
 
+        //  Print out the string and the number of characters
         System.out.println(str + " has " + str.length() + " characters.");
     }
 }
